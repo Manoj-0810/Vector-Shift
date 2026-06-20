@@ -1,0 +1,124 @@
+/* App-specific styles */
+
+/* ReactFlow customizations */
+.react-flow__node {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.react-flow__node.selected {
+  box-shadow: none !important;
+}
+
+.react-flow__handle {
+  opacity: 0.8;
+  transition: all 0.15s ease;
+}
+
+.react-flow__handle:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+  transition: stroke 0.15s ease;
+}
+
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke-width: 3;
+}
+
+.react-flow__minimap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  border: none !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  background: white !important;
+  color: #475569 !important;
+}
+
+.dark .react-flow__controls-button {
+  border-bottom-color: #334155 !important;
+  background: #1e293b !important;
+  color: #94a3b8 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #f1f5f9 !important;
+}
+
+.dark .react-flow__controls-button:hover {
+  background: #334155 !important;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+/* Selection box */
+.react-flow__selection {
+  background: rgba(59, 130, 246, 0.08) !important;
+  border: 1px dashed rgba(59, 130, 246, 0.4) !important;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: -1px;
+  border-radius: 4px;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* Textarea resize handle */
+textarea {
+  resize: vertical;
+}
+
+/* Prevent text selection on drag */
+.react-flow__pane {
+  user-select: none;
+}

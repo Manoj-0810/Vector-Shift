@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+dist/
+build/
+.vite/
+
+# Environment files — NEVER COMMIT
+.env
+.env.local
+.env.production
+.env*.local
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
